@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="oav1ag" data-token-hash="xeg8v4">
+    :where(.css-amq5gd) a {
+        color: #1677ff;
+        text-decoration: none;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+        transition: color 0.3s;
+        -webkit-text-decoration-skip: objects;
+    }
+
+    :where(.css-amq5gd) a:hover {
+        color: #69b1ff;
+    }
+
+    :where(.css-amq5gd) a:active {
+        color: #0958d9;
+    }
+
+    :where(.css-amq5gd) a:active,
+    :where(.css-amq5gd) a:hover {
+        text-decoration: none;
+        outline: 0;
+    }
+
+    :where(.css-amq5gd) a:focus {
+        text-decoration: none;
+        outline: 0;
+    }
+
+    :where(.css-amq5gd) a[disabled] {
+        color: rgba(0, 0, 0, 0.25);
+        cursor: not-allowed;
+    }
+</style>
+<style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="t2zk8u" data-token-hash="xeg8v4">
+
+</style>
+
+<style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="1c1djjx" data-token-hash="xeg8v4">
+    :where(.css-amq5gd).ant-popover {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: rgba(0, 0, 0, 0.88);
+        font-size: 14px;
+        line-height: 1.5714285714285714;
+        list-style: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1030;
+        font-weight: normal;
+        white-space: normal;
+        text-align: start;
+        cursor: auto;
+        user-select: text;
+        transform-origin: var(--arrow-x, 50%) var(--arrow-y, 50%);
+        --antd-arrow-background-color: #ffffff;
+    }
+
+    :where(.css-amq5gd).ant-popover-rtl {
+        direction: rtl;
+    }
+
+    :where(.css-amq5gd).ant-popover-hidden {
+        display: none;
+    }
+
+    :where(.css-amq5gd).ant-popover .ant-popover-content {
+        position: relative;
+    }
+
+    :where(.css-amq5gd).ant-popover .ant-popover-inner {
+        background-color: #ffffff;
+        background-clip: padding-box;
+        border-radius: 8px;
+        box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+        padding: 12px;
+    }
+
+    :where(.css-amq5gd).ant-popover .ant-popover-title {
+        min-width: 177px;
+        margin-bottom: 8px;
+        color: rgba(0, 0, 0, 0.88);
+        font-weight: 600;
+    }
+
+    :where(.css-amq5gd).ant-popover .ant-popover-inner-content {
+        color: rgba(0, 0, 0, 0.88);
+    }
+
+    :where(.css-amq5gd).ant-popover .ant-popover-arrow {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        pointer-events: none;
+        width: 16px;
+        height: 16px;
+        overflow: hidden;
+    }
+
+    :where(.css-amq5gd).ant-popover .ant-popover-arrow::before {
+        position: absolute;
+        bottom: 0;
+        inset-inline-start: 0;
+        width: 16px;
+        height: 8px;
+        background: var(--antd-arrow-background-color);
+        clip-path: polygon(1.6568542494923806px 100%, 50% 1.6568542494923806px, 14.34314575050762px 100%, 1.6568542494923806px 100%);
+        clip-path: path('M 0 8 A 4 4 0 0 0 2.82842712474619 6.82842712474619 L 6.585786437626905 3.0710678118654755 A 2 2 0 0 1 9.414213562373096 3.0710678118654755 L 13.17157287525381 6.82842712474619 A 4 4 0 0 0 16 8 Z');
+        content: "";
+    }
+
+    :where(.css-amq5gd).ant-popover .ant-popover-arrow::after {
+        content: "";
+        position: absolute;
+        width: 8.970562748477143px;
+        height: 8.970562748477143px;
+        bottom: 0;
+        inset-inline: 0;
+        margin: auto;
+        border-radius: 0 0 2px 0;
+        transform: translateY(50%) rotate(-135deg);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+        z-index: 0;
+        background: transparent;
+    }
+
+    :where(.css-amq5gd).ant-popover .ant-popover-arrow:before {
+        background: var(--antd-arrow-background-color);
+    }
+
+    :where(.css-amq5gd).ant-popover-placement-top .ant-popover-arrow,
+    :where(.css-amq5gd).ant-popover-placement-topLeft .ant-popover-arrow,
+    :where(.css-amq5gd).ant-popover-placement-topRight .ant-popover-arrow {
+        bottom: 0;
+        transform: translateY(100%) rotate(180deg);
+    }
+
+    :where(.css-amq5gd).ant-popover-placement-top .ant-popover-arrow {
+        left: 50%;
+        transform: translateX(-50%) translateY(100%) rotate(180deg);
+    }
+
+    :where(.css-amq5gd).ant-popover-placement-topLeft .ant-popover-arrow {
+        left: 12px;
+    }
+
+    :where(.css-amq5gd).ant-popover-placement-topRight .ant-popover-arrow {
+        right: 12px;
+    }
+
+    :where(.css-amq5gd).ant-popover-placement-bottom .ant-popover-arrow,
+    :where(.css-amq5gd).ant-popover-placement-bottomLeft .ant-popover-arrow,
+    :where(.css-amq5gd).ant-popover-placement-bottomRight .ant-popover-arrow {
+        top: 0;
+        transform: translateY(-100%);
+    }
+
+    :where(.css-amq5gd).ant-popover-placement-bottom .ant-popover-arrow {
+        left: 50%;
+        transform: translateX(-50%) translateY(-100%);
+    }
+
+    :where(.css-amq5gd).ant-popover-placement-bottomLeft .ant-popover-arrow {
+        left: 12px;
+    }
+
+    :where(.css-amq5gd).ant-popover-placement-bottomRight .ant-popover-arrow {
+        right: 12px;
+    }
+
+    :where(.css-amq5gd).ant-popover-placement-left .ant-popover-arrow,
+    :where(.css-amq5gd).ant-popover-placement-leftTop .ant-popover-arrow,
+    :where(.css-amq5gd).ant-popover-placement-leftBottom .ant-popover-arrow {
+        right: 0;
+        transform: translateX(100%) rotate(90deg);
+    }
+
+    :where(.css-amq5gd).ant-popover-placement-left .ant-popover-arrow {
+        top: 50%;
+        transform: translateY(-50%) translateX(100%) rotate(90deg);
+    }
+
+    :where(.css-amq5gd).ant-popover-placement-leftTop .ant-popover-arrow {
+        top: 12px;
+    }
+
+    :where(.css-amq5gd).ant-popover-placement-leftBottom .ant-popover-arrow {
+        bottom: 12px;
+    }
+
+    :where(.css-amq5gd).ant-popover-placement-right .ant-popover-arrow,
+    :where(.css-amq5gd).ant-popover-placement-rightTop .ant-popover-arrow,
+    :where(.css-amq5gd).ant-popover-placement-rightBottom .ant-popover-arrow {
+        left: 0;
+        transform: translateX(-100%) rotate(-90deg);
+    }
+
+    :where(.css-amq5gd).ant-popover-placement-right .ant-popover-arrow {
+        top: 50%;
+        transform: translateY(-50%) translateX(-100%) rotate(-90deg);
+    }
+
+    :where(.css-amq5gd).ant-popover-placement-rightTop .ant-popover-arrow {
+        top: 12px;
+    }
+
+    :where(.css-amq5gd).ant-popover-placement-rightBottom .ant-popover-arrow {
+        bottom: 12px;
+    }
+
+    :where(.css-amq5gd).ant-popover-pure {
+        position: relative;
+        max-width: none;
+        margin: 16px;
+        display: inline-block;
+    }
+
+    :where(.css-amq5gd).ant-popover-pure .ant-popover-content {
+        display: inline-block;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-blue {
+        --antd-arrow-background-color: #1677ff;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-blue .ant-popover-inner {
+        background-color: #1677ff;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-blue .ant-popover-arrow {
+        background: transparent;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-purple {
+        --antd-arrow-background-color: #722ed1;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-purple .ant-popover-inner {
+        background-color: #722ed1;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-purple .ant-popover-arrow {
+        background: transparent;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-cyan {
+        --antd-arrow-background-color: #13c2c2;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-cyan .ant-popover-inner {
+        background-color: #13c2c2;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-cyan .ant-popover-arrow {
+        background: transparent;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-green {
+        --antd-arrow-background-color: #52c41a;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-green .ant-popover-inner {
+        background-color: #52c41a;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-green .ant-popover-arrow {
+        background: transparent;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-magenta {
+        --antd-arrow-background-color: #eb2f96;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-magenta .ant-popover-inner {
+        background-color: #eb2f96;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-magenta .ant-popover-arrow {
+        background: transparent;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-pink {
+        --antd-arrow-background-color: #eb2f96;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-pink .ant-popover-inner {
+        background-color: #eb2f96;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-pink .ant-popover-arrow {
+        background: transparent;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-red {
+        --antd-arrow-background-color: #f5222d;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-red .ant-popover-inner {
+        background-color: #f5222d;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-red .ant-popover-arrow {
+        background: transparent;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-orange {
+        --antd-arrow-background-color: #fa8c16;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-orange .ant-popover-inner {
+        background-color: #fa8c16;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-orange .ant-popover-arrow {
+        background: transparent;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-yellow {
+        --antd-arrow-background-color: #fadb14;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-yellow .ant-popover-inner {
+        background-color: #fadb14;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-yellow .ant-popover-arrow {
+        background: transparent;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-volcano {
+        --antd-arrow-background-color: #fa541c;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-volcano .ant-popover-inner {
+        background-color: #fa541c;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-volcano .ant-popover-arrow {
+        background: transparent;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-geekblue {
+        --antd-arrow-background-color: #2f54eb;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-geekblue .ant-popover-inner {
+        background-color: #2f54eb;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-geekblue .ant-popover-arrow {
+        background: transparent;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-lime {
+        --antd-arrow-background-color: #a0d911;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-lime .ant-popover-inner {
+        background-color: #a0d911;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-lime .ant-popover-arrow {
+        background: transparent;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-gold {
+        --antd-arrow-background-color: #faad14;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-gold .ant-popover-inner {
+        background-color: #faad14;
+    }
+
+    :where(.css-amq5gd).ant-popover.ant-popover-gold .ant-popover-arrow {
+        background: transparent;
+    }
+
+    :where(.css-amq5gd).ant-zoom-big-enter,
+    :where(.css-amq5gd).ant-zoom-big-appear {
+        animation-duration: 0.2s;
+        animation-fill-mode: both;
+        animation-play-state: paused;
+    }
+
+    :where(.css-amq5gd).ant-zoom-big-leave {
+        animation-duration: 0.2s;
+        animation-fill-mode: both;
+        animation-play-state: paused;
+    }
+
+    :where(.css-amq5gd).ant-zoom-big-enter.ant-zoom-big-enter-active,
+    :where(.css-amq5gd).ant-zoom-big-appear.ant-zoom-big-appear-active {
+        animation-name: css-amq5gd-antZoomBigIn;
+        animation-play-state: running;
+    }
+
+    :where(.css-amq5gd).ant-zoom-big-leave.ant-zoom-big-leave-active {
+        animation-name: css-amq5gd-antZoomBigOut;
+        animation-play-state: running;
+        pointer-events: none;
+    }
+
+    :where(.css-amq5gd).ant-zoom-big-enter,
+    :where(.css-amq5gd).ant-zoom-big-appear {
+        transform: scale(0);
+        opacity: 0;
+        animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+    }
+
+    :where(.css-amq5gd).ant-zoom-big-enter-prepare,
+    :where(.css-amq5gd).ant-zoom-big-appear-prepare {
+        transform: none;
+    }
+
+    :where(.css-amq5gd).ant-zoom-big-leave {
+        animation-timing-function: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+    }
+</style>
+<style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="_effect-css-amq5gd-antZoomBigIn">
+    @keyframes css-amq5gd-antZoomBigIn {
+        0% {
+            transform: scale(0.8);
+            opacity: 0;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+</style>
+
+<style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="_effect-css-amq5gd-antZoomBigOut">
+    @keyframes css-amq5gd-antZoomBigOut {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(0.8);
+            opacity: 0;
+        }
+    }
+</style>
+
+<style data-rc-order="prependQueue" data-css-hash="pn774g" data-token-hash="xeg8v4">
+    .anticon {
+        display: inline-flex;
+        align-items: center;
+        color: inherit;
+        font-style: normal;
+        line-height: 0;
+        text-align: center;
+        text-transform: none;
+        vertical-align: -0.125em;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .anticon>* {
+        line-height: 1;
+    }
+
+    .anticon svg {
+        display: inline-block;
+    }
+
+    .anticon .anticon .anticon-icon {
+        display: block;
+    }
+</style>
+
+<style type="text/css" id="ate_helper_css">
+    .addeventatc_dropdown .drop_markup {
+        background-color: #f4f4f4;
+    }
+
+    .addeventatc_dropdown .frs a {
+        margin: 0 !important;
+        padding: 0 !important;
+        font-style: normal !important;
+        font-weight: normal !important;
+        line-height: 110% !important;
+        background-color: #fff !important;
+        text-decoration: none;
+        font-size: 9px !important;
+        color: #cacaca !important;
+        display: inline-block;
+    }
+
+    .addeventatc_dropdown .frs a:hover {
+        color: #999 !important;
+    }
+
+    .addeventatc .start,
+    .addeventatc .end,
+    .addeventatc .timezone,
+    .addeventatc .title,
+    .addeventatc .description,
+    .addeventatc .location,
+    .addeventatc .organizer,
+    .addeventatc .organizer_email,
+    .addeventatc .facebook_event,
+    .addeventatc .all_day_event,
+    .addeventatc .date_format,
+    .addeventatc .alarm_reminder,
+    .addeventatc .recurring,
+    .addeventatc .attendees,
+    .addeventatc .client,
+    .addeventatc .calname,
+    .addeventatc .uid,
+    .addeventatc .sequence,
+    .addeventatc .status,
+    .addeventatc .method,
+    .addeventatc .transp {
+        display: none !important;
+    }
+</style>
+
+<!--head-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light only">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage"    content="https://www.fixdate.io/modelo-invitacion/36/img/faviconit/favicon-144.png">
+<meta name="msapplication-config" content="https://www.fixdate.io/modelo-invitacion/36/img/faviconit/browserconfig.xml">
+
+
+
+<title>💍💘💫 Casamiento | Celeste y Ariel 💍💘💫 </title>
+
+<!--listado de css con version dinamica segun modficacion de archivo-->
+<link rel="stylesheet" href="https://www.fixdate.io/modelo-invitacion/36/css/bootstrap.min.css?v=1670862526">
+<link rel="stylesheet" href="https://www.fixdate.io/modelo-invitacion/36/css/slick.css?v=1670862528">
+<link rel="stylesheet" href="https://www.fixdate.io/modelo-invitacion/36/css/slick-theme.css?v=1670862527">
+<link rel="stylesheet" href="https://www.fixdate.io/modelo-invitacion/36/css/jquery.fancybox.min.css?v=1670862526">
+<link rel="stylesheet" href="https://www.fixdate.io/modelo-invitacion/36/css/addEvent.css?v=1670862525">
+<link rel="stylesheet" href="https://www.fixdate.io/modelo-invitacion/36/css/style.css?v=1670862528">
+<link rel="stylesheet" href="https://www.fixdate.io/modelo-invitacion/36/css/responsive.css?v=1670862527">
+<!-- Fonts -->
+<link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Quicksand:wght@400;700&amp;display=swap"
+    rel="stylesheet">
+<!-- Favicons -->
+<link rel="icon" sizes="16x16 32x32 64x64"  href="./assets/diegoicon.ico">
+<link rel="icon" href="./assets/diegoicon.ico" type="image/x-icon">
+
+
+
+<!-- MIOS -->
+<link rel="stylesheet" href="./Glider.js-master/glider.css">
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+
+
+<body >
+
+        <!--Musica automatica-->
+        <audio id="miAudio" src="./audio/elvis.mp3" autoplay></audio>
+
+    <header >
+        
+
+            <div class="content-portada text-center">
+                
+                <!-- IMG_PRINCIPAL -->
+                <div class="contenedorImg">
+                    <img class="img_principal"  src="./img/nosotros.enc" alt="IMG_PRINCIPAL">
+                </div>
+                
+
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="flecha-continuar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 607 607"
+                            width="607" height="1" preserveAspectRatio="xMidYMid meet"
+                            style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);">
+                            <defs>
+                                <clipPath id="__lottie_element_73">
+                                    <rect width="60" height="607" x="0" y="0"></rect>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#__lottie_element_73)">
+                                <g transform="matrix(-1,0,0,-1,303.50799560546875,424.9482116699219)" opacity="1"
+                                    style="display: block;">
+                                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                        <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                            stroke-miterlimit="10" stroke="rgb(255,255,255)" stroke-opacity="1"
+                                            stroke-width="20"
+                                            d=" M-210.9709930419922,120.15899658203125 C-210.9709930419922,120.15899658203125 -0.00800000037997961,-120.33300018310547 -0.00800000037997961,-120.33300018310547 C-0.00800000037997961,-120.33300018310547 210.9709930419922,120.33300018310547 210.9709930419922,120.33300018310547">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g transform="matrix(-1,0,0,-1,426,323.91998291015625)" opacity="1"
+                                    style="display: none;">
+                                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                        <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                            stroke-miterlimit="10" stroke="rgb(255,255,255)" stroke-opacity="1"
+                                            stroke-width="20"
+                                            d=" M112.26399993896484,244.7899932861328 C115.58200073242188,244.92599487304688 118.91799926757812,244.9969940185547 122.26899719238281,245">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g transform="matrix(-1,0,0,-1,181,323.91998291015625)" opacity="1"
+                                    style="display: none;">
+                                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                        <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                            stroke-miterlimit="10" stroke="rgb(255,255,255)" stroke-opacity="1"
+                                            stroke-width="20"
+                                            d=" M-112.26399993896484,244.7899932861328 C-115.58200073242188,244.92599487304688 -118.91799926757812,244.9969940185547 -122.26899719238281,245">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g transform="matrix(-0.6474335193634033,-0.9598596692085266,0.9598596692085266,-0.6474335193634033,219.33364868164062,163.1382598876953)"
+                                    opacity="1" style="display: none;">
+                                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                        <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                            stroke-miterlimit="10" stroke="rgb(255,255,255)" stroke-opacity="1"
+                                            stroke-width="5"
+                                            d=" M129.2969970703125,-19.26300048828125 C129.45599365234375,-17.09600067138672 129.58799743652344,-14.920999526977539 129.6929931640625,-12.739999771118164">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g transform="matrix(0.9484142065048218,0.6640867590904236,-0.6640867590904236,0.9484142065048218,422.7938537597656,382.2122802734375)"
+                                    opacity="1" style="display: none;">
+                                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                        <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                            stroke-miterlimit="10" stroke="rgb(255,255,255)" stroke-opacity="1"
+                                            stroke-width="5"
+                                            d=" M-110.73699951171875,-259.2969970703125 C-112.90399932861328,-259.45599365234375 -115.0790023803711,-259.5880126953125 -117.26000213623047,-259.6929931640625">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g transform="matrix(-1,0,0,-1,303.50799560546875,304.24798583984375)" opacity="1"
+                                    style="display: none;">
+                                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                        <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                            stroke-miterlimit="10" stroke="rgb(255,255,255)" stroke-opacity="1"
+                                            stroke-width="20"
+                                            d=" M-210.9709930419922,120.15899658203125 C-210.9709930419922,120.15899658203125 -0.00800000037997961,-120.33300018310547 -0.00800000037997961,-120.33300018310547 C-0.00800000037997961,-120.33300018310547 210.9709930419922,120.33300018310547 210.9709930419922,120.33300018310547">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+    </header>
+    
+
+
+    <!-- Cuenta Regresiva -->
+    <section class="cuenta-regresiva">
+        
+        <div class="container">
+            <div class="row ">
+
+                <div class="box-aros ">
+                    <div class="box-circulo ">
+
+                        <span class="falta">Falta</span>
+
+                        <!-- <img class="divisor" src="https://www.fixdate.io/modelo-invitacion/36/img/img_linea01.svg"alt=""> -->
+
+                        <div id="reloj" class="reloj">
+
+                            <div id="dias" class="reloj-col">
+                                <span class="number">39</span>
+                                <span class="time">días</span>
+                            </div>
+
+                            <div id="horas" class="reloj-col">
+                                <span class="number">22</span>
+                                <span class="time">hs</span>
+                            </div>
+
+                            <div id="minutos" class="reloj-col">
+                                <span class="number">7</span>
+                                <span class="time">min</span>
+                            </div>
+
+                            <div id="segundos" class="reloj-col no-border">
+                                <span class="number">35</span>
+                                <span class="time">seg</span>
+                            </div>
+
+                            <div class="clearfix "  ></div>
+
+                        </div>
+
+                        <div class="d-flex justify-content-center align-items-center">
+
+                            <!-- Corazon -->
+                            <div class="corazon-falta"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 32"
+                                    width="38" height="32" preserveAspectRatio="xMidYMid meet"
+                                    style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);">
+                                    <defs>
+                                        <clipPath id="__lottie_element_179">
+                                            <rect width="38" height="32" x="0" y="0"></rect>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#__lottie_element_179)">
+                                        <g transform="matrix(0.9054099917411804,0,0,0.9054099917411804,1.818939208984375,1.4536828994750977)"
+                                            opacity="1" style="display: block;">
+                                            <g opacity="1"
+                                                transform="matrix(1,0,0,1,18.97599983215332,16.06599998474121)">
+                                                <path fill="rgb(174,148,97)" fill-opacity="1"
+                                                    d=" M-1.1369999647140503,15.593999862670898 C-0.7720000147819519,15.741999626159668 -0.38600000739097595,15.815999984741211 0.0010000000474974513,15.815999984741211 C0.3869999945163727,15.815999984741211 0.7730000019073486,15.741999626159668 1.1369999647140503,15.593999862670898 C1.8550000190734863,15.300999641418457 18.725000381469727,8.284000396728516 18.725000381469727,-4.073999881744385 C18.725000381469727,-10.550000190734863 13.385000228881836,-15.815999984741211 6.820000171661377,-15.815999984741211 C4.349999904632568,-15.815999984741211 1.9789999723434448,-15.067000389099121 0.0010000000474974513,-13.70199966430664 C-1.9780000448226929,-15.067000389099121 -4.348999977111816,-15.815999984741211 -6.817999839782715,-15.815999984741211 C-13.383999824523926,-15.815999984741211 -18.725000381469727,-10.550000190734863 -18.725000381469727,-4.073999881744385 C-18.725000381469727,8.284000396728516 -1.8550000190734863,15.300999641418457 -1.1369999647140503,15.593999862670898z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- CARROUSEL -->
+
+
+    <section class="carrouselSeccion "  >
+
+        <div    class="carousel slide carrouselMias" data-bs-ride="carousel">
+            <div class="carousel-inner M"   >
+
+                <div class="carousel-item active ">
+                    <img src="./img/xuxa.jpeg" alt="diegoConBirra">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/nosotros.enc" alt="diegoPasionDeSab">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/xuxa.jpeg" alt="">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./img/nosotros.enc" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/xuxa.jpeg" alt="">
+                </div>
+            </div>
+
+        </div>
+    
+        <div class="conteiner__carrousel "    >
+        <div class="conteiner__carrousel "    >
+
+    </section>
+
+
+    <!-- Ceremonia - Fiesta-->
+    <section class="ceremonia-fiesta">
+        <div class="box-nombres-fecha-portada" style=" width: 100%; margin: auto; text-align: center;">
+            <h1>Celeste y Ariel</h1>
+            <h2>Nuestro Casamiento</h2>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class=" col-md-12 col-fiesta text-center">
+
+                    <div class="anim-fiesta">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300"
+                            height="300" preserveAspectRatio="xMidYMid meet"
+                            style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);">
+                            <defs>
+                                <clipPath id="__lottie_element_212">
+                                    <rect width="300" height="300" x="0" y="0"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <br>
+
+                    <h3>Fiesta </h3>
+
+                    <div class="info-col" style="display: flex;  flex-wrap: wrap; justify-content: space-around;">
+                        <div class="info-box">
+                            <h6>Día</h6>
+                            <p>Sábado 7 De Septiembre</p>
+                        </div>
+
+                        <div class="info-box">
+                            <h6>Direccion</h6>
+                            <p>La Cuadra De La Jefa :)</p>
+                        </div>
+
+                        <div class="info-box">
+                            <h6>Horario</h6>
+                            <p>12hs Mediodia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Fiesta-->
+    <section class="fiesta">
+        <div class="container">
+            <div class="row text-center d-flex justify-content-center align-items-center">
+
+                <div class="col-md-12">
+                    <h2 class="title">Fiesta</h2>
+                    <p class="subtitle">Hagamos juntos una fiesta épica. </p>
+                </div>
+
+
+                <!-- Canciones -->
+                <div class="col-md-4 item-fiesta">
+
+                    <div
+                        class="w-100 content-item-fiesta d-flex flex-column justify-content-between align-items-center">
+
+                        <h3>Música</h3>
+
+                        <div class="d-flex justify-content-center align-items-center content-anim-fiesta">
+                            <div class="anim-musica"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111 121"
+                                    width="111" height="121" preserveAspectRatio="xMidYMid meet"
+                                    style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);">
+                                    <defs>
+                                        <clipPath id="__lottie_element_147">
+                                            <rect width="111" height="121" x="0" y="0"></rect>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#__lottie_element_147)">
+                                        <g transform="matrix(1,0,0,1,0,0)" opacity="0.19000000005235052"
+                                            style="display: none;">
+                                            <g opacity="1"
+                                                transform="matrix(1,0,0,1,93.38200378417969,28.083999633789062)">
+                                                <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                                    stroke-miterlimit="10" stroke="rgb(174,148,97)" stroke-opacity="1"
+                                                    stroke-width="3"
+                                                    d=" M9.42300033569336,-1.8270000219345093 C4.723999977111816,-3.5840001106262207 2.6679999828338623,-8.164999961853027 1.8609999418258667,-10.739999771118164 C1.6059999465942383,-11.557000160217285 0.8579999804496765,-12.104999542236328 0,-12.104999542236328 C-0.8569999933242798,-12.104999542236328 -1.6059999465942383,-11.557000160217285 -1.8619999885559082,-10.739999771118164 C-2.6689999103546143,-8.164999961853027 -4.7230000495910645,-3.5840001106262207 -9.42300033569336,-1.8270000219345093 C-10.1899995803833,-1.5399999618530273 -10.6850004196167,-0.8240000009536743 -10.685999870300293,-0.0010000000474974513 C-10.685999870300293,0.8209999799728394 -10.1899995803833,1.5390000343322754 -9.42300033569336,1.8259999752044678 C-4.7230000495910645,3.5829999446868896 -2.6689999103546143,8.163000106811523 -1.8619999885559082,10.73799991607666 C-1.6059999465942383,11.555000305175781 -0.8569999933242798,12.104999542236328 0,12.104999542236328 C0.8579999804496765,12.104999542236328 1.6059999465942383,11.555000305175781 1.8609999418258667,10.73799991607666 C2.6679999828338623,8.163000106811523 4.723999977111816,3.5829999446868896 9.42300033569336,1.8259999752044678 C10.190999984741211,1.5390000343322754 10.685999870300293,0.8209999799728394 10.685999870300293,-0.0010000000474974513 C10.685999870300293,-0.8240000009536743 10.1899995803833,-1.5399999618530273 9.42300033569336,-1.8270000219345093z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,0,0)" opacity="0.2775000000523562"
+                                            style="display: none;">
+                                            <g opacity="1"
+                                                transform="matrix(1,0,0,1,70.65299987792969,39.2599983215332)">
+                                                <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                                    stroke-miterlimit="10" stroke="rgb(174,148,97)" stroke-opacity="1"
+                                                    stroke-width="3"
+                                                    d=" M-7.0229997634887695,1.6990000009536743 C-3.744999885559082,2.924999952316284 -2.299999952316284,6.151000022888184 -1.7330000400543213,7.965000152587891 C-1.49399995803833,8.72599983215332 -0.7979999780654907,9.236000061035156 -0.0010000000474974513,9.236000061035156 C0.796999990940094,9.236000061035156 1.4930000305175781,8.72599983215332 1.7319999933242798,7.965000152587891 C2.2990000247955322,6.151000022888184 3.743000030517578,2.9260001182556152 7.0229997634887695,1.6990000009536743 C7.736999988555908,1.4320000410079956 8.199000358581543,0.7649999856948853 8.199999809265137,0.0010000000474974513 C8.199999809265137,-0.7639999985694885 7.736999988555908,-1.430999994277954 7.0229997634887695,-1.6990000009536743 C3.743000030517578,-2.924999952316284 2.299999952316284,-6.151000022888184 1.7319999933242798,-7.965000152587891 C1.4930000305175781,-8.725000381469727 0.796999990940094,-9.236000061035156 -0.0010000000474974513,-9.236000061035156 C-0.7979999780654907,-9.236000061035156 -1.49399995803833,-8.725000381469727 -1.7330000400543213,-7.965000152587891 C-2.3010001182556152,-6.151000022888184 -3.74399995803833,-2.9260001182556152 -7.0229997634887695,-1.6990000009536743 C-7.736999988555908,-1.4320000410079956 -8.199999809265137,-0.7639999985694885 -8.199999809265137,0.0010000000474974513 C-8.199000358581543,0.7649999856948853 -7.736999988555908,1.4320000410079956 -7.0229997634887695,1.6990000009536743z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,0,0)" opacity="0.6975000000477252"
+                                            style="display: none;">
+                                            <g opacity="1"
+                                                transform="matrix(1,0,0,1,29.084999084472656,88.52799987792969)">
+                                                <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                                    stroke-miterlimit="10" stroke="rgb(174,148,97)" stroke-opacity="1"
+                                                    stroke-width="3"
+                                                    d=" M9.42300033569336,-1.8270000219345093 C4.723999977111816,-3.5840001106262207 2.6689999103546143,-8.164999961853027 1.8619999885559082,-10.739999771118164 C1.6069999933242798,-11.557000160217285 0.8579999804496765,-12.104999542236328 0.0010000000474974513,-12.104999542236328 C0.0010000000474974513,-12.104999542236328 0,-12.104999542236328 0,-12.104999542236328 C-0.8569999933242798,-12.104999542236328 -1.6050000190734863,-11.557000160217285 -1.8619999885559082,-10.739999771118164 C-2.6679999828338623,-8.164999961853027 -4.7230000495910645,-3.5840001106262207 -9.42199993133545,-1.8270000219345093 C-10.189000129699707,-1.5399999618530273 -10.6850004196167,-0.8230000138282776 -10.6850004196167,-0.0010000000474974513 C-10.685999870300293,0.8209999799728394 -10.1899995803833,1.5390000343322754 -9.42199993133545,1.8259999752044678 C-4.7230000495910645,3.5829999446868896 -2.6679999828338623,8.163999557495117 -1.8619999885559082,10.73799991607666 C-1.6050000190734863,11.557000160217285 -0.8569999933242798,12.104999542236328 0.0010000000474974513,12.104999542236328 C0.8579999804496765,12.104999542236328 1.6069999933242798,11.557000160217285 1.8619999885559082,10.73799991607666 C2.6689999103546143,8.163999557495117 4.723999977111816,3.5829999446868896 9.42300033569336,1.8259999752044678 C10.190999984741211,1.5390000343322754 10.685999870300293,0.8209999799728394 10.685999870300293,-0.0010000000474974513 C10.685999870300293,-0.8230000138282776 10.1899995803833,-1.5399999618530273 9.42300033569336,-1.8270000219345093z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                        <g transform="matrix(0.9950615763664246,0.09925950318574905,-0.09925950318574905,0.9950615763664246,6.255802154541016,-10.882621765136719)"
+                                            opacity="1" style="display: block;">
+                                            <g opacity="1"
+                                                transform="matrix(1,0,0,1,70.74500274658203,90.83399963378906)">
+                                                <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                                    stroke-miterlimit="10" stroke="rgb(174,148,97)" stroke-opacity="1"
+                                                    stroke-width="3"
+                                                    d=" M31.590999603271484,-22.299999237060547 C31.08099937438965,-22.95800018310547 30.31399917602539,-23.375999450683594 29.485000610351562,-23.44700050354004 C29.485000610351562,-23.44700050354004 -6.922999858856201,-26.565000534057617 -6.922999858856201,-26.565000534057617 C-8.458999633789062,-26.695999145507812 -9.866000175476074,-25.608999252319336 -10.123000144958496,-24.08799934387207 C-10.305999755859375,-23.007999420166016 -10.48900032043457,-21.929000854492188 -10.67199993133545,-20.849000930786133 C-11.27299976348877,-17.299999237060547 -15.305999755859375,6.492000102996826 -15.378000259399414,6.915999889373779 C-15.522000312805176,7.77400016784668 -16.0049991607666,7.5229997634887695 -16.82200050354004,7.428999900817871 C-17.375999450683594,7.366000175476074 -17.934999465942383,7.335999965667725 -18.493000030517578,7.341000080108643 C-19.63599967956543,7.35099983215332 -20.775999069213867,7.499000072479248 -21.884000778198242,7.776000022888184 C-28.204999923706055,9.35099983215332 -32.31399917602539,14.779000282287598 -31.04400062561035,19.874000549316406 C-30.41200065612793,22.409000396728516 -28.584999084472656,24.461999893188477 -25.899999618530273,25.65399932861328 C-24.340999603271484,26.34600067138672 -22.597000122070312,26.695999145507812 -20.795000076293945,26.695999145507812 C-19.63599967956543,26.695999145507812 -18.45199966430664,26.551000595092773 -17.277999877929688,26.257999420166016 C-14.651000022888184,25.60300064086914 -12.166000366210938,24.211999893188477 -10.366999626159668,22.17099952697754 C-8.571000099182129,20.131999969482422 -8.074000358581543,17.84600067138672 -7.633999824523926,15.24899959564209 C-7.46999979019165,14.279999732971191 -2.9049999713897705,-12.638999938964844 -2.815000057220459,-13.086999893188477 C-2.683000087738037,-13.73799991607666 -2.315000057220459,-13.637999534606934 -1.7410000562667847,-13.59000015258789 C-0.9399999976158142,-13.520999908447266 20.53499984741211,-11.680999755859375 21.159000396728516,-11.628999710083008 C21.360000610351562,-11.611000061035156 21.606000900268555,-11.548999786376953 21.562999725341797,-11.295000076293945 C21.361000061035156,-10.10099983215332 18.54199981689453,6.616000175476074 18.493000030517578,6.817999839782715 C18.327999114990234,7.491000175476074 17.466999053955078,7.072999954223633 16.986000061035156,7.020999908447266 C16.44700050354004,6.9629998207092285 15.904999732971191,6.939000129699707 15.36400032043457,6.946000099182129 C14.23799991607666,6.958000183105469 13.114999771118164,7.10699987411499 12.02299976348877,7.379000186920166 C9.024999618530273,8.12600040435791 6.421999931335449,9.751999855041504 4.693999767303467,11.958999633789062 C2.88100004196167,14.272000312805176 2.2320001125335693,16.941999435424805 2.86299991607666,19.476999282836914 C3.8970000743865967,23.625 8.180999755859375,26.29400062561035 13.14799976348877,26.29400062561035 C14.281999588012695,26.29400062561035 15.45300006866455,26.155000686645508 16.628999710083008,25.86199951171875 C20.96299934387207,24.781999588012695 24.437000274658203,21.816999435424805 25.601999282836914,18.243999481201172 C26.163000106811523,16.520999908447266 31.823999404907227,-17.902000427246094 32.00299835205078,-18.95800018310547 C32.06100082397461,-19.29599952697754 32.117000579833984,-19.634000778198242 32.17499923706055,-19.972999572753906 C32.31399917602539,-20.79400062561035 32.10100173950195,-21.642000198364258 31.590999603271484,-22.299999237060547z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;">
+                                            <g opacity="1"
+                                                transform="matrix(1,0,0,1,31.030000686645508,44.19499969482422)">
+                                                <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                                    stroke-miterlimit="10" stroke="rgb(174,148,97)" stroke-opacity="1"
+                                                    stroke-width="3"
+                                                    d=" M27.599000930786133,5.492000102996826 C27.1200008392334,2.4719998836517334 22.238000869750977,-28.26300048828125 22.007999420166016,-29.711999893188477 C21.87700080871582,-30.534000396728516 21.405000686645508,-31.268999099731445 20.711999893188477,-31.729999542236328 C20.018999099731445,-32.191001892089844 19.158000946044922,-32.34299850463867 18.349000930786133,-32.14500045776367 C18.349000930786133,-32.14500045776367 -17.14900016784668,-23.475000381469727 -17.14900016784668,-23.475000381469727 C-18.64699935913086,-23.110000610351562 -19.631000518798828,-21.628999710083008 -19.389999389648438,-20.104999542236328 C-19.368999481201172,-19.972000122070312 -14.508999824523926,10.689000129699707 -14.468999862670898,10.958999633789062 C-14.340999603271484,11.831999778747559 -15.005000114440918,11.755999565124512 -15.701000213623047,11.906999588012695 C-16.236000061035156,12.022000312805176 -16.763999938964844,12.170999526977539 -17.281999588012695,12.350000381469727 C-18.363000869750977,12.722999572753906 -19.398000717163086,13.229000091552734 -20.361000061035156,13.845999717712402 C-25.847999572753906,17.35700035095215 -28.009000778198242,23.812000274658203 -25.179000854492188,28.236000061035156 C-23.770000457763672,30.437000274658203 -21.382999420166016,31.79800033569336 -18.45800018310547,32.07099914550781 C-15.529000282287598,32.34299850463867 -12.557999610900879,31.466999053955078 -10.095000267028809,29.889999389648438 C-7.574999809265137,28.277999877929688 -5.494999885559082,25.856000900268555 -4.545000076293945,22.9950008392334 C-4.301000118255615,22.261999130249023 -4.135000228881836,21.50200080871582 -4.065000057220459,20.73200035095215 C-4.000999927520752,20.045000076293945 -4.021999835968018,19.363000869750977 -4.1020002365112305,18.68000030517578 C-4.197999954223633,17.849000930786133 -8.89799976348877,-11.564000129699707 -8.970999717712402,-12.032999992370605 C-9.045000076293945,-12.496000289916992 -9.017000198364258,-12.609000205993652 -8.54699993133545,-12.722999572753906 C-7.409999847412109,-13.00100040435791 13.897000312805176,-18.204999923706055 14.093999862670898,-18.253000259399414 C14.510000228881836,-18.354999542236328 14.697999954223633,-18.25200080871582 14.765999794006348,-17.823999404907227 C15.29699993133545,-14.468999862670898 17.434999465942383,-0.9729999899864197 17.5310001373291,-0.367000013589859 C17.69700050354004,0.6800000071525574 17.099000930786133,0.5299999713897705 16.27199935913086,0.7110000252723694 C15.722000122070312,0.8309999704360962 15.178999900817871,0.9869999885559082 14.647000312805176,1.1740000247955322 C13.593999862670898,1.5449999570846558 12.585000038146973,2.0420000553131104 11.644000053405762,2.6429998874664307 C6.5329999923706055,5.914000034332275 4.311999797821045,11.73799991607666 6.321000099182129,16.09600067138672 C6.321000099182129,16.09600067138672 6.639999866485596,16.929000854492188 7.468999862670898,17.891000747680664 C7.502999782562256,17.930999755859375 7.538000106811523,17.969999313354492 7.572999954223633,18.010000228881836 C9.14900016784668,19.784000396728516 12.17300033569336,21.983999252319336 16.885000228881836,20.68000030517578 C18.625,20.354000091552734 20.344999313354492,19.68899917602539 21.910999298095703,18.687000274658203 C24.172000885009766,17.240999221801758 26.069000244140625,15.154000282287598 27.128000259399414,12.673999786376953 C27.614999771118164,11.53600025177002 27.923999786376953,10.315999984741211 27.965999603271484,9.076000213623047 C28.009000778198242,7.815999984741211 27.79599952697754,6.736000061035156 27.599000930786133,5.492000102996826z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg></div>
+                        </div>
+
+
+                        <p class="dj">
+                            Dj En Vivo<br> Veni con todas las ganas de bailar y reir🕺</p>
+
+                        <!-- <a href="#" class="boton sugerir-cancion">Sugerir canción</a> -->
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- Vestuario -->
+                <div class="col-md-4 item-fiesta">
+
+                    <div
+                        class="w-100 content-item-fiesta d-flex flex-column justify-content-between align-items-center">
+
+                        <h3>Vestuario</h3>
+
+                        <div class="d-flex justify-content-center align-items-center content-anim-fiesta">
+                            <div class="anim-vestuario"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 76"
+                                    width="150" height="76" preserveAspectRatio="xMidYMid meet"
+                                    style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);">
+                                    <defs>
+                                        <clipPath id="__lottie_element_183">
+                                            <rect width="150" height="76" x="0" y="0"></rect>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#__lottie_element_183)">
+                                        <g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;">
+                                            <g opacity="1"
+                                                transform="matrix(1,0,0,1,100.25499725341797,27.170000076293945)">
+                                                <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0"
+                                                    stroke-miterlimit="10" stroke="rgb(174,148,97)" stroke-opacity="1"
+                                                    stroke-width="3.141"
+                                                    d=" M-11.293000221252441,3.131999969482422 C-11.293000221252441,3.131999969482422 -0.6650000214576721,-2.183000087738037 11.291999816894531,-3.131999969482422">
+                                                </path>
+                                            </g>
+                                            <g opacity="1"
+                                                transform="matrix(1,0,0,1,101.54000091552734,48.047000885009766)">
+                                                <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0"
+                                                    stroke-miterlimit="10" stroke="rgb(174,148,97)" stroke-opacity="1"
+                                                    stroke-width="3.141"
+                                                    d=" M-12.524999618530273,-3.322000026702881 C-12.524999618530273,-3.322000026702881 2.6570000648498535,3.321000099182129 12.524999618530273,2.750999927520752">
+                                                </path>
+                                            </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;">
+                                            <g opacity="1"
+                                                transform="matrix(1,0,0,1,49.58300018310547,27.170000076293945)">
+                                                <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0"
+                                                    stroke-miterlimit="10" stroke="rgb(174,148,97)" stroke-opacity="1"
+                                                    stroke-width="3.141"
+                                                    d=" M11.291999816894531,3.131999969482422 C11.291999816894531,3.131999969482422 0.6639999747276306,-2.183000087738037 -11.291999816894531,-3.131999969482422">
+                                                </path>
+                                            </g>
+                                            <g opacity="1"
+                                                transform="matrix(1,0,0,1,48.29800033569336,48.047000885009766)">
+                                                <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0"
+                                                    stroke-miterlimit="10" stroke="rgb(174,148,97)" stroke-opacity="1"
+                                                    stroke-width="3.141"
+                                                    d=" M12.524999618530273,-3.322000026702881 C12.524999618530273,-3.322000026702881 -2.6570000648498535,3.321000099182129 -12.524999618530273,2.750999927520752">
+                                                </path>
+                                            </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;">
+                                            <g opacity="1"
+                                                transform="matrix(1,0,0,1,89.24700164794922,37.702999114990234)">
+                                                <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0"
+                                                    stroke-miterlimit="10" stroke="rgb(174,148,97)" stroke-opacity="1"
+                                                    stroke-width="3.141"
+                                                    d=" M-2.750999927520752,-15.371999740600586 C-2.750999927520752,-15.371999740600586 3.13100004196167,-1.8980000019073486 -3.131999969482422,15.371999740600586">
+                                                </path>
+                                            </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;">
+                                            <g opacity="1"
+                                                transform="matrix(1,0,0,1,60.685001373291016,37.513999938964844)">
+                                                <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0"
+                                                    stroke-miterlimit="10" stroke="rgb(174,148,97)" stroke-opacity="1"
+                                                    stroke-width="3.141"
+                                                    d=" M2.2769999504089355,-15.562999725341797 C2.2769999504089355,-15.562999725341797 -2.2769999504089355,-3.7960000038146973 2.0889999866485596,15.562999725341797">
+                                                </path>
+                                            </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;">
+                                            <g opacity="1"
+                                                transform="matrix(1,0,0,1,74.91899871826172,36.944000244140625)">
+                                                <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0"
+                                                    stroke-miterlimit="10" stroke="rgb(174,148,97)" stroke-opacity="1"
+                                                    stroke-width="3.141"
+                                                    d=" M-10.611000061035156,16.131999969482422 C-10.611000061035156,16.131999969482422 11.196999549865723,16.131999969482422 11.196999549865723,16.131999969482422 C11.196999549865723,16.131999969482422 30.176000595092773,33.78099822998047 52.000999450683594,35.68000030517578 C52.000999450683594,35.68000030517578 68.7020034790039,38.715999603271484 70.5999984741211,26.3799991607666 C70.5999984741211,26.3799991607666 76.86299896240234,-0.5690000057220459 70.03099822998047,-25.809999465942383 C70.03099822998047,-25.809999465942383 67.56400299072266,-40.04399871826172 50.483001708984375,-33.78200149536133 C50.483001708984375,-33.78200149536133 22.58300018310547,-26.759000778198242 11.576000213623047,-14.61299991607666 C11.576000213623047,-14.61299991607666 -11.956000328063965,-14.993000030517578 -11.956000328063965,-14.993000030517578 C-11.956000328063965,-14.993000030517578 -26.950000762939453,-33.402000427246094 -54.27899932861328,-34.72999954223633 C-54.27899932861328,-34.72999954223633 -66.23500061035156,-36.81800079345703 -70.22100067138672,-24.101999282836914 C-70.22100067138672,-24.101999282836914 -76.86299896240234,6.072999954223633 -70.79000091552734,23.913000106811523 C-70.79000091552734,23.913000106811523 -64.90699768066406,40.04399871826172 -53.709999084472656,36.058998107910156 C-53.709999084472656,36.058998107910156 -25.430999755859375,32.263999938964844 -12.145999908447266,16.131999969482422">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg></div>
+                        </div>
+
+                        <p>Elegante - Ropa Oscura</p>
+
+                        <!-- <a href="#" class="boton modal-vestuario">Ver más </a> -->
+
+                    </div>
+
+                </div>
+
+
+                <!-- Notas -->
+                <div class="col-md-4 item-fiesta">
+
+                    <div
+                        class="w-100 content-item-fiesta d-flex flex-column justify-content-between align-items-center">
+
+                        <h3>Importante</h3>
+
+
+                        <div class=" d-flex justify-content-center align-items-center content-anim-fiesta">
+                            <div class="anim-tips"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77 105"
+                                    width="77" height="105" preserveAspectRatio="xMidYMid meet"
+                                    style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);">
+                                    <defs>
+                                        <clipPath id="__lottie_element_256">
+                                            <rect width="77" height="105" x="0" y="0"></rect>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#__lottie_element_256)">
+                                        <g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;">
+                                            <g opacity="1"
+                                                transform="matrix(1,0,0,1,37.7869987487793,57.72100067138672)">
+                                                <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0"
+                                                    stroke-miterlimit="10" stroke="rgb(174,148,97)" stroke-opacity="1"
+                                                    stroke-width="3.12"
+                                                    d=" M-15.368000030517578,-0.34700000286102295 C-15.368000030517578,-0.34700000286102295 -4.968999862670898,9.822999954223633 -4.968999862670898,9.822999954223633 C-4.968999862670898,9.822999954223633 6.603000164031982,-1.3550000190734863 12.288999557495117,-6.8480000495910645">
+                                                </path>
+                                            </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;">
+                                            <g opacity="1"
+                                                transform="matrix(1,0,0,1,37.90299987792969,15.944000244140625)">
+                                                <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0"
+                                                    stroke-miterlimit="10" stroke="rgb(174,148,97)" stroke-opacity="1"
+                                                    stroke-width="3.12"
+                                                    d=" M17.10300064086914,-6.309999942779541 C17.10300064086914,-6.309999942779541 17.10300064086914,-3.5209999084472656 17.10300064086914,-3.5209999084472656 C17.10300064086914,2.0309998989105225 12.60200023651123,6.5320000648498535 7.048999786376953,6.5320000648498535 C7.048999786376953,6.5320000648498535 -7.047999858856201,6.5320000648498535 -7.047999858856201,6.5320000648498535 C-12.60099983215332,6.5320000648498535 -17.10300064086914,2.0309998989105225 -17.10300064086914,-3.5209999084472656 C-17.10300064086914,-3.5209999084472656 -17.10300064086914,-6.5320000648498535 -17.10300064086914,-6.5320000648498535">
+                                                </path>
+                                            </g>
+                                            <g opacity="1"
+                                                transform="matrix(1,0,0,1,38.30699920654297,52.11600112915039)">
+                                                <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0"
+                                                    stroke-miterlimit="10" stroke="rgb(174,148,97)" stroke-opacity="1"
+                                                    stroke-width="3.12"
+                                                    d=" M28.604000091552734,-43.04499816894531 C28.604000091552734,-43.04499816894531 8.97700023651123,-43.04499816894531 8.97700023651123,-43.04499816894531 C8.211999893188477,-47.31399917602539 4.488999843597412,-50.55500030517578 0,-50.55500030517578 C-4.488999843597412,-50.55500030517578 -8.213000297546387,-47.31399917602539 -8.977999687194824,-43.04499816894531 C-8.977999687194824,-43.04499816894531 -28.604000091552734,-43.04499816894531 -28.604000091552734,-43.04499816894531 C-33.10200119018555,-43.04499816894531 -36.74700164794922,-39.39899826049805 -36.74700164794922,-34.902000427246094 C-36.74700164794922,-34.902000427246094 -36.74700164794922,42.41299819946289 -36.74700164794922,42.41299819946289 C-36.74700164794922,46.90999984741211 -33.10200119018555,50.55500030517578 -28.604000091552734,50.55500030517578 C-28.604000091552734,50.55500030517578 28.604000091552734,50.55500030517578 28.604000091552734,50.55500030517578 C33.10100173950195,50.55500030517578 36.74700164794922,46.90999984741211 36.74700164794922,42.41299819946289 C36.74700164794922,42.41299819946289 36.74700164794922,-34.902000427246094 36.74700164794922,-34.902000427246094 C36.74700164794922,-39.39899826049805 33.10100173950195,-43.04499816894531 28.604000091552734,-43.04499816894531z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg></div>
+                        </div>
+
+
+                        <p>Sean Puntuales  <br> No Queremos Que Se Pierdan De Nada </p>
+
+
+                        <!-- <a href="#" class="boton  modal-tips">+ Info </a> -->
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Regalos-->
+    <section class="regalos">
+
+
+        <div class="regalos-flor-der"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 227 495" width="227"
+                height="495" preserveAspectRatio="xMidYMid meet"
+                style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);">
+                <defs>
+                    <clipPath id="__lottie_element_92">
+                        <rect width="227" height="495" x="0" y="0"></rect>
+                    </clipPath>
+                </defs>
+                <g clip-path="url(#__lottie_element_92)">
+                    <g transform="matrix(1,0,0,1,235,85)" opacity="0.3" style="display: block;">
+                        <g opacity="1" transform="matrix(1,0,0,1,117.5,181.2530059814453)">
+                            <path fill="rgb(174,148,97)" fill-opacity="1"
+                                d=" M-91.72699737548828,115.53900146484375 C-84.83799743652344,125.11199951171875 -77.18099975585938,134.3209991455078 -67.95999908447266,141.74600219726562 C-58.770999908447266,149.14700317382812 -48.20399856567383,154.25900268554688 -36.61199951171875,156.54800415039062 C-23.83099937438965,159.0709991455078 -10.505000114440918,159.08399963378906 2.4730000495910645,159.33900451660156 C16.582000732421875,159.61700439453125 30.698999404907227,159.47900390625 44.79899978637695,158.92300415039062 C51.68899917602539,158.6510009765625 58.57600021362305,158.27999877929688 65.45600128173828,157.8090057373047 C71.86000061035156,157.37100219726562 78.43499755859375,156.43600463867188 84.84400177001953,157.23399353027344 C94.97899627685547,158.49600219726562 102.14299774169922,165.22300720214844 107.81900024414062,173.0850067138672 C107.81900024414062,173.0850067138672 107.81900024414062,154.48599243164062 107.81900024414062,154.48599243164062 C106.07099914550781,151.1009979248047 104.3219985961914,147.71400451660156 102.6050033569336,144.3090057373047 C97.98500061035156,133.53599548339844 93.43800354003906,122.7300033569336 88.93699645996094,111.90699768066406 C86.66899871826172,103.83699798583984 85.56199645996094,95.47000122070312 86.83999633789062,87.1259994506836 C89.0790023803711,72.50499725341797 98.03399658203125,61.4119987487793 107.81900024414062,50.797000885009766 C107.81900024414062,50.797000885009766 107.81900024414062,48.071998596191406 107.81900024414062,48.071998596191406 C102.75800323486328,53.500999450683594 97.80999755859375,59.0260009765625 93.68900299072266,65.21099853515625 C86.80799865722656,75.53800201416016 83.39099884033203,87.20500183105469 84.5510025024414,99.62999725341797 C84.62699890136719,100.4260025024414 84.71700286865234,101.22100067138672 84.8219985961914,102.01399993896484 C83.05500030517578,97.76799774169922 81.29199981689453,93.52200317382812 79.53600311279297,89.27200317382812 C79.1500015258789,81.39399719238281 79.89600372314453,73.51499938964844 81.86199951171875,65.65499877929688 C85.30000305175781,51.90299987792969 91.22200012207031,38.85499954223633 96.74700164794922,25.850000381469727 C100.7969970703125,16.312000274658203 104.6989974975586,6.7129998207092285 107.81900024414062,-3.1510000228881836 C107.81900024414062,-3.1510000228881836 107.81900024414062,-10.152999877929688 107.81900024414062,-10.152999877929688 C107.56300354003906,-9.206000328063965 107.31700134277344,-8.258000373840332 107.0459976196289,-7.315999984741211 C102.8949966430664,7.068999767303467 96.69400024414062,20.72800064086914 90.90699768066406,34.5 C85.83300018310547,46.57400131225586 80.75499725341797,58.93600082397461 78.48600006103516,71.9020004272461 C77.77999877929688,75.93699645996094 77.4260025024414,79.97599792480469 77.37799835205078,84.00800323486328 C75.19599914550781,78.68199920654297 73.03099822998047,73.3499984741211 70.9219970703125,67.99700164794922 C70.20099639892578,66.16899871826172 69.49500274658203,64.33200073242188 68.7979965209961,62.49100112915039 C69.37899780273438,38.43299865722656 83.6240005493164,16.958999633789062 92.48999786376953,-5.111999988555908 C97.58399963378906,-17.79199981689453 100.74099731445312,-31.03700065612793 99.62200164794922,-44.777000427246094 C99.06800079345703,-51.58100128173828 97.60399627685547,-58.231998443603516 95.51699829101562,-64.697998046875 C100.30699920654297,-71.5770034790039 104.62000274658203,-78.72000122070312 107.81900024414062,-86.43900299072266 C107.81900024414062,-86.43900299072266 107.81900024414062,-92 107.81900024414062,-92 C104.79499816894531,-82.95700073242188 100.11000061035156,-74.78800201416016 94.75599670410156,-66.97200012207031 C92.4219970703125,-73.69000244140625 89.43800354003906,-80.1989974975586 86.10299682617188,-86.45500183105469 C78.5510025024414,-100.61900329589844 69.13400268554688,-113.68900299072266 59.7400016784668,-126.66600036621094 C48.507999420166016,-142.1820068359375 36.95000076293945,-157.45899963378906 25.08799934387207,-172.4980010986328 C24.625,-173.0850067138672 23.704999923706055,-173.07400512695312 23.360000610351562,-172.35699462890625 C10.937999725341797,-146.54100036621094 -1.7170000076293945,-120.27300262451172 -7.160999774932861,-91.93299865722656 C-11.449999809265137,-69.61499786376953 -11.14799976348877,-45.74399948120117 -2.747999906539917,-24.384000778198242 C7.415999889373779,1.4630000591278076 29.54800033569336,19.163000106811523 45.78799819946289,40.91899871826172 C54.67100143432617,52.81999969482422 62.00899887084961,65.68099975585938 68.64299774169922,78.927001953125 C69.09200286865234,80.96399688720703 69.62699890136719,82.99299621582031 70.23799896240234,85.01599884033203 C59.393001556396484,67.07099914550781 45.27399826049805,49.96099853515625 26.770999908447266,39.79399871826172 C18.547000885009766,35.275001525878906 9.006999969482422,32.30500030517578 -0.4569999873638153,33.3120002746582 C-11.517999649047852,34.487998962402344 -20.400999069213867,42.13800048828125 -31.288999557495117,43.82899856567383 C-31.87299919128418,43.91999816894531 -32.439998626708984,44.518001556396484 -32.15999984741211,45.15299987792969 C-26.145999908447266,58.810001373291016 -16.274999618530273,70.5270004272461 -4.01200008392334,79.00900268554688 C6.767000198364258,86.46499633789062 19.292999267578125,91.4749984741211 32.32699966430664,93.0790023803711 C45.720001220703125,94.72599792480469 62.13199996948242,90.45999908447266 72.21700286865234,101.86399841308594 C77.75800323486328,108.12999725341797 81.64900207519531,116.1969985961914 85.78099822998047,123.41899871826172 C88.4010009765625,128.00100708007812 90.96199798583984,132.61700439453125 93.4729995727539,137.25900268554688 C96.23999786376953,143.7550048828125 98.98899841308594,150.22500610351562 101.822998046875,156.57899475097656 C101.08599853515625,156.02699279785156 100.33699798583984,155.49200439453125 99.5739974975586,154.97500610351562 C95.23999786376953,150.08599853515625 90.12899780273438,146.02200317382812 83.63099670410156,143.54200744628906 C72.78299713134766,139.40199279785156 60.96900177001953,139.08299255371094 49.79899978637695,136.18299865722656 C37.51499938964844,132.9949951171875 25.83300018310547,127.40299987792969 15.640999794006348,119.84100341796875 C4.940999984741211,111.89900207519531 -3.562999963760376,101.44300079345703 -14.22700023651123,93.46800231933594 C-23.209999084472656,86.7509994506836 -33.62699890136719,82.63600158691406 -44.64799880981445,80.73400115966797 C-55.64699935913086,78.83499908447266 -66.91300201416016,78.94400024414062 -78.01200103759766,79.73799896240234 C-83.7040023803711,80.14600372314453 -89.38099670410156,80.74199676513672 -95.0510025024414,81.38500213623047 C-98.08999633789062,81.7300033569336 -102.02799987792969,82.19200134277344 -104.57099914550781,84.14099884033203 C-104.62100219726562,84.11299896240234 -104.6719970703125,84.08699798583984 -104.7229995727539,84.05999755859375 C-105.69000244140625,83.54100036621094 -106.43699645996094,84.7750015258789 -105.93900299072266,85.52799987792969 C-106.46299743652344,86.25900268554688 -106.84100341796875,87.12899780273438 -107.02300262451172,88.16699981689453 C-107.81900024414062,92.72599792480469 -104.00399780273438,97.22699737548828 -101.71700286865234,100.76300048828125 C-98.48899841308594,105.75700378417969 -95.19999694824219,110.71199798583984 -91.72699737548828,115.53900146484375z M24.466999053955078,-170.05099487304688 C27.006999969482422,-166.822998046875 29.54199981689453,-163.58999633789062 32.053001403808594,-160.33999633789062 C43.6619987487793,-145.322998046875 54.98699951171875,-130.0780029296875 65.94100189208984,-114.5770034790039 C74.91600036621094,-101.87699890136719 83.54900360107422,-88.74400329589844 89.7239990234375,-74.41999816894531 C91.06400299072266,-71.31199645996094 92.27100372314453,-68.13800048828125 93.33100128173828,-64.91899871826172 C84.49700164794922,-52.37099838256836 74.16100311279297,-40.61899948120117 66.56600189208984,-27.44099998474121 C60.64899826049805,-17.173999786376953 56.70399856567383,-6.026000022888184 55.79600143432617,5.836999893188477 C54.88399887084961,17.743000030517578 56.676998138427734,29.65999984741211 59.7140007019043,41.15800094604492 C61.676998138427734,48.59700012207031 64.16100311279297,55.87799835205078 66.87899780273438,63.073001861572266 C66.87899780273438,63.494998931884766 66.87799835205078,63.91699981689453 66.88500213623047,64.33899688720703 C63.59299850463867,54.26599884033203 60.36199951171875,44.17300033569336 57.279998779296875,34.03300094604492 C47.249000549316406,1.0290000438690186 38.71900177001953,-32.564998626708984 34.67599868774414,-66.87799835205078 C30.69300079345703,-100.68199920654297 31.030000686645508,-134.9239959716797 25.003000259399414,-168.49600219726562 C24.91200065612793,-169.0030059814453 24.533000946044922,-169.27200317382812 24.128999710083008,-169.34300231933594 C24.242000579833984,-169.57899475097656 24.354000091552734,-169.81500244140625 24.466999053955078,-170.05099487304688z M43.803001403808594,35.0880012512207 C27.065000534057617,14.15999984741211 5.997000217437744,-3.7829999923706055 -2.6429998874664307,-29.983999252319336 C-18.18600082397461,-77.11699676513672 2.927999973297119,-125.09700012207031 23.173999786376953,-167.35499572753906 C26.466999053955078,-148.62600708007812 27.8439998626709,-129.64300537109375 29.09000015258789,-110.68699645996094 C30.208999633789062,-93.67400360107422 31.27899932861328,-76.64600372314453 33.569000244140625,-59.74100112915039 C35.85100173950195,-42.893001556396484 39.16899871826172,-26.19499969482422 43.16400146484375,-9.67300033569336 C49.83300018310547,17.905000686645508 58.37900161743164,44.965999603271484 67.26000213623047,71.9020004272461 C60.49800109863281,58.981998443603516 52.94200134277344,46.51300048828125 43.803001403808594,35.0880012512207z M67.07599639892578,57.827999114990234 C64.08100128173828,49.529998779296875 61.459999084472656,41.090999603271484 59.71200180053711,32.44499969482422 C57.319000244140625,20.608999252319336 56.619998931884766,8.315999984741211 59.15999984741211,-3.558000087738037 C61.7130012512207,-15.48799991607666 67.63400268554688,-26.261999130249023 74.50599670410156,-36.22200012207031 C80.66899871826172,-45.152000427246094 87.69000244140625,-53.70399856567383 94.05500030517578,-62.625999450683594 C97.23699951171875,-52.13999938964844 98.70999908447266,-41.17900085449219 97.36799621582031,-30.20400047302246 C95.68499755859375,-16.440000534057617 89.97899627685547,-3.615000009536743 84.12200164794922,8.8100004196167 C78.43699645996094,20.867000579833984 72.34100341796875,32.900001525878906 69.02799987792969,45.88100051879883 C68.01000213623047,49.869998931884766 67.3759994506836,53.85499954223633 67.07599639892578,57.827999114990234z M78.81400299072266,100.44200134277344 C78.8219985961914,100.48699951171875 78.83200073242188,100.53199768066406 78.83999633789062,100.5770034790039 C77.91400146484375,98.75900268554688 76.96900177001953,96.94999694824219 76.00399780273438,95.1510009765625 C75.35600280761719,93.60600280761719 74.73899841308594,92.0510025024414 74.15399932861328,90.48600006103516 C74.1780014038086,90.48500061035156 74.2020034790039,90.47599792480469 74.22699737548828,90.4729995727539 C75.77999877929688,93.78600311279297 77.30500030517578,97.11000061035156 78.81400299072266,100.44200134277344z M69.22699737548828,71.46399688720703 C69.0999984741211,70.43299865722656 69.00399780273438,69.40899658203125 68.93000030517578,68.38899993896484 C70.01100158691406,71.13400268554688 71.11599731445312,73.87000274658203 72.2300033569336,76.5979995727539 C73.97799682617188,80.87699890136719 75.73899841308594,85.1500015258789 77.49500274658203,89.4260025024414 C77.56999969482422,90.79000091552734 77.677001953125,92.1520004272461 77.81900024414062,93.51200103759766 C76.39299774169922,90.42500305175781 74.94599914550781,87.34400177001953 73.46900177001953,84.27899932861328 C72.04900360107422,80.00900268554688 70.63600158691406,75.73699951171875 69.22699737548828,71.46399688720703z M2.6570000648498535,35.12300109863281 C13.887999534606934,34.9109992980957 24.67099952697754,40.027000427246094 33.57899856567383,46.494998931884766 C51.191001892089844,59.2859992980957 63.630001068115234,76.29299926757812 73.7959976196289,94.94599914550781 C74.18599700927734,95.91300201416016 74.58799743652344,96.87699890136719 74.99700164794922,97.83799743652344 C70.88300323486328,93.55899810791016 66.72000122070312,89.33100128173828 62.40999984741211,85.2509994506836 C51.04100036621094,74.49199676513672 38.50899887084961,64.5999984741211 24.08099937438965,58.28499984741211 C16.441999435424805,54.94300079345703 8.380999565124512,52.86600112915039 0.27000001072883606,51.0359992980957 C-8.852999687194824,48.97800064086914 -17.989999771118164,46.97100067138672 -27.1200008392334,44.941001892089844 C-27.134000778198242,44.9379997253418 -27.145000457763672,44.94300079345703 -27.15999984741211,44.939998626708984 C-17.02899932861328,42.11000061035156 -8.246000289916992,35.32899856567383 2.6570000648498535,35.12300109863281z M71.21199798583984,98.05000305175781 C60.8650016784668,89.02400207519531 45.90399932861328,92.60900115966797 33.430999755859375,91.2020034790039 C6.361999988555908,88.14600372314453 -18.409000396728516,70.31199645996094 -29.7810001373291,45.5620002746582 C-29.156999588012695,45.4370002746582 -28.53700065612793,45.29600143432617 -27.923999786376953,45.13800048828125 C-28.44700050354004,45.61199951171875 -28.39699935913086,46.702999114990234 -27.483999252319336,46.90599822998047 C-17.507999420166016,49.125 -7.51200008392334,51.266998291015625 2.443000078201294,53.58100128173828 C10.640000343322754,55.486000061035156 18.673999786376953,57.83700180053711 26.277999877929688,61.49399948120117 C33.36000061035156,64.9000015258789 39.983001708984375,69.17400360107422 46.2140007019043,73.9489974975586 C57.54899978637695,82.63400268554688 67.56600189208984,92.86399841308594 77.38200378417969,103.2020034790039 C78.96399688720703,106.63200378417969 80.63200378417969,110.0260009765625 82.3489990234375,113.4010009765625 C79.23500061035156,107.85700225830078 75.91999816894531,102.15499877929688 71.21199798583984,98.05000305175781z M84.4540023803711,108.1449966430664 C83.22200012207031,105.39700317382812 81.98400115966797,102.64700317382812 80.73799896240234,99.89800262451172 C80.49600219726562,98.53500366210938 80.29000091552734,97.1719970703125 80.11399841308594,95.80699920654297 C82.38800048828125,101.3270034790039 84.6780014038086,106.84100341796875 86.97100067138672,112.35199737548828 C87.38700103759766,113.84200286865234 87.84100341796875,115.3239974975586 88.33100128173828,116.7959976196289 C87.03800201416016,113.91200256347656 85.74700164794922,111.02799987792969 84.4540023803711,108.1449966430664z M-96.43299865722656,83.5530014038086 C-74.93199920654297,80.89199829101562 -51.444000244140625,78.572998046875 -30.756999969482422,86.5510025024414 C-19.097000122070312,91.0479965209961 -10.03600025177002,99.1709976196289 -1.1510000228881836,107.71199798583984 C7.8379998207092285,116.35199737548828 17.10099983215332,124.2699966430664 28.238000869750977,130.03500366210938 C38.60100173950195,135.4010009765625 49.64099884033203,138.61900329589844 61.11899948120117,140.52000427246094 C72.14700317382812,142.3459930419922 83.74099731445312,143.87100219726562 92.75199890136719,150.96200561523438 C87.2770004272461,148.17999267578125 81.39299774169922,146.11000061035156 75.38099670410156,144.64100646972656 C60.8120002746582,141.0800018310547 45.73099899291992,140.9550018310547 30.881999969482422,139.4250030517578 C15.053000450134277,137.79400634765625 -0.1589999943971634,133.66099548339844 -14.954000473022461,127.86299896240234 C-29.909000396728516,122.00299835205078 -44.35300064086914,114.86699676513672 -58.74300003051758,107.75599670410156 C-73.48100280761719,100.47200012207031 -88.09600067138672,92.94100189208984 -102.59400177001953,85.19100189208984 C-100.77400207519531,84.13400268554688 -98.32499694824219,83.78700256347656 -96.43299865722656,83.5530014038086z M-105.05799865722656,88.52999877929688 C-104.92500305175781,87.76399993896484 -104.62899780273438,87.1259994506836 -104.22200012207031,86.58599853515625 C-87.75499725341797,95.4010009765625 -71.13500213623047,103.9280014038086 -54.35900115966797,112.13899993896484 C-40.21200180053711,119.06300354003906 -25.9950008392334,125.96099853515625 -11.206000328063965,131.42300415039062 C3.257999897003174,136.76400756835938 18.054000854492188,140.25900268554688 33.415000915527344,141.6719970703125 C55.04399871826172,143.66099548339844 80.09600067138672,144.04100036621094 98.41300201416016,156.45799255371094 C101.42500305175781,159.95199584960938 103.98600006103516,163.8470001220703 106.37200164794922,167.77999877929688 C106.46299743652344,167.9290008544922 106.5510025024414,168.08099365234375 106.64099884033203,168.2310028076172 C103.62999725341797,164.58599853515625 100.18000030517578,161.28199768066406 96.0770034790039,158.88800048828125 C91.38200378417969,156.14999389648438 86.14399719238281,155.08399963378906 80.75399780273438,154.97000122070312 C74.49099731445312,154.83900451660156 68.19300079345703,155.63999938964844 61.948001861572266,156.03799438476562 C55.066001892089844,156.4759979248047 48.178001403808594,156.81500244140625 41.28799819946289,157.0540008544922 C27.666000366210938,157.52699279785156 14.031000137329102,157.61199951171875 0.40400001406669617,157.30499267578125 C-12.354000091552734,157.01800537109375 -25.43000030517578,156.96800231933594 -37.95000076293945,154.22799682617188 C-49.7859992980957,151.63900756835938 -60.35499954223633,145.83299255371094 -69.44300079345703,137.88999938964844 C-78.36399841308594,130.09300231933594 -85.73999786376953,120.7040023803711 -92.48200225830078,111.00900268554688 C-95.78700256347656,106.25499725341797 -98.9540023803711,101.40399932861328 -102.07099914550781,96.5250015258789 C-103.53099822998047,94.23899841308594 -105.55400085449219,91.40699768066406 -105.05799865722656,88.52999877929688z">
+                            </path>
+                        </g>
+                    </g>
+                    <g transform="matrix(1,0,0,1,176,-28)" opacity="0.3" style="display: block;">
+                        <g opacity="1" transform="matrix(1,0,0,1,163.7760009765625,422.5849914550781)">
+                            <path fill="rgb(174,148,97)" fill-opacity="1"
+                                d=" M61.54199981689453,-29.719999313354492 C56.95500183105469,-26.490999221801758 52.915000915527344,-22.216999053955078 49.244998931884766,-17.733999252319336 C39.57400131225586,-5.915999889373779 29.768999099731445,5.4629998207092285 18.243000030517578,15.54699993133545 C-3.8440001010894775,34.87099838256836 -29.687000274658203,49.69900131225586 -57.505001068115234,59.01599884033203 C-53.641998291015625,52.902000427246094 -51.465999603271484,45.86399841308594 -48.941001892089844,39.1349983215332 C-47.59600067138672,35.54899978637695 -46.19499969482422,31.94099998474121 -44.29399871826172,28.604999542236328 C-42.1150016784668,24.783000946044922 -39.242000579833984,21.393999099731445 -36.189998626708984,18.246000289916992 C-30.635000228881836,12.515000343322754 -24.60300064086914,7.264999866485596 -19.014999389648438,1.559999942779541 C-13.246999740600586,-4.328999996185303 -7.638000011444092,-10.375 -1.7869999408721924,-16.18400001525879 C9.697999954223633,-27.589000701904297 22.51099967956543,-38.37699890136719 38.18600082397461,-43.36199951171875 C45.74800109863281,-45.766998291015625 53.70000076293945,-46.54899978637695 61.54199981689453,-45.891998291015625 C61.54199981689453,-45.891998291015625 61.54199981689453,-47.8849983215332 61.54199981689453,-47.8849983215332 C52.49300003051758,-48.60100173950195 43.33000183105469,-47.45000076293945 34.755001068115234,-44.29899978637695 C19.222999572753906,-38.59199905395508 6.593999862670898,-27.452999114990234 -4.9019999504089355,-15.883999824523926 C-10.887999534606934,-9.862000465393066 -16.652999877929688,-3.625 -22.639999389648438,2.3959999084472656 C-28.472000122070312,8.263999938964844 -34.91299819946289,13.593999862670898 -40.367000579833984,19.826000213623047 C-45.25199890136719,25.406999588012695 -48.290000915527344,31.695999145507812 -50.86399841308594,38.59000015258789 C-53.012001037597656,44.34000015258789 -54.893001556396484,50.40299987792969 -57.893001556396484,55.81100082397461 C-54.61000061035156,41.41299819946289 -56.54499816894531,26.3700008392334 -54.86399841308594,11.727999687194824 C-54.0099983215332,4.281000137329102 -52.09199905395508,-3.1700000762939453 -47.893001556396484,-9.473999977111816 C-42.19200134277344,-18.031999588012695 -33.21900177001953,-23.593000411987305 -24.52199935913086,-28.690000534057617 C-14.894000053405762,-34.33300018310547 -5.047999858856201,-39.608001708984375 4.992000102996826,-44.48400115966797 C13.897000312805176,-48.810001373291016 22.94700050354004,-53.14899826049805 32.33599853515625,-56.33599853515625 C40.91699981689453,-59.24800109863281 50.099998474121094,-60.98899841308594 59.099998474121094,-59.090999603271484 C59.92499923706055,-58.91699981689453 60.73699951171875,-58.707000732421875 61.54199981689453,-58.479000091552734 C61.54199981689453,-58.479000091552734 61.54199981689453,-60.518001556396484 61.54199981689453,-60.518001556396484 C58.78900146484375,-61.262001037597656 55.952999114990234,-61.724998474121094 53.04800033569336,-61.854000091552734 C44.12699890136719,-62.24800109863281 35.35300064086914,-59.750999450683594 27.111000061035156,-56.55500030517578 C17.214000701904297,-52.715999603271484 7.580999851226807,-48.071998596191406 -1.8880000114440918,-43.2859992980957 C-11.706999778747559,-38.323001861572266 -21.437000274658203,-33.069000244140625 -30.781999588012695,-27.2549991607666 C-38.888999938964844,-22.21299934387207 -46.63399887084961,-16.207000732421875 -51.28900146484375,-7.684999942779541 C-54.81800079345703,-1.225000023841858 -56.3650016784668,6.091000080108643 -57.03499984741211,13.36299991607666 C-58.483001708984375,29.06599998474121 -56.132999420166016,45.395999908447266 -61.27399826049805,60.59600067138672 C-61.542999267578125,61.388999938964844 -60.92599868774414,62.24700164794922 -60.042999267578125,61.965999603271484 C-44.52000045776367,57.02899932861328 -29.56399917602539,50.40399932861328 -15.479999542236328,42.215999603271484 C9.60200023651123,27.634000778198242 30.89900016784668,8.340999603271484 48.99100112915039,-14.239999771118164 C52.770999908447266,-18.954999923706055 56.71799850463867,-23.757999420166016 61.54199981689453,-27.45199966430664 C61.54199981689453,-27.45199966430664 61.54199981689453,-29.719999313354492 61.54199981689453,-29.719999313354492z">
+                            </path>
+                        </g>
+                    </g>
+                </g>
+            </svg></div>
+
+        <div class="mariposa-efect mariposa-1-regalos"></div>
+
+        <div class="container">
+            <div class="row text-center d-flex justify-content-center align-items-center">
+
+                <h2 class="title">Regalos</h2>
+                <p class="subtitle">Si deseas regalarnos algo más que tu hermosa presencia...</p>
+
+                <div class="w-100">
+
+                    <div class="anim-regalos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 114" width="96"
+                            height="114" preserveAspectRatio="xMidYMid meet"
+                            style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);">
+                            <defs>
+                                <clipPath id="__lottie_element_246">
+                                    <rect width="96" height="114" x="0" y="0"></rect>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#__lottie_element_246)">
+                                <g transform="matrix(1,0,0,0.9399500489234924,0,6.4197235107421875)" opacity="1"
+                                    style="display: block;">
+                                    <g opacity="1" transform="matrix(1,0,0,1,48.388999938964844,86.24800109863281)">
+                                        <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                            stroke-miterlimit="10" stroke="rgb(190,168,128)" stroke-opacity="1"
+                                            stroke-width="3"
+                                            d=" M27.260000228881836,-23.70400047302246 C27.260000228881836,-23.70400047302246 27.260000228881836,16.000999450683594 27.260000228881836,16.000999450683594 C27.260000228881836,20.2549991607666 23.81100082397461,23.70400047302246 19.55699920654297,23.70400047302246 C19.55699920654297,23.70400047302246 -19.55500030517578,23.70400047302246 -19.55500030517578,23.70400047302246 C-23.809999465942383,23.70400047302246 -27.260000228881836,20.2549991607666 -27.260000228881836,16.000999450683594 C-27.260000228881836,16.000999450683594 -27.260000228881836,-23.70400047302246 -27.260000228881836,-23.70400047302246 C-27.260000228881836,-23.70400047302246 27.260000228881836,-23.70400047302246 27.260000228881836,-23.70400047302246z">
+                                        </path>
+                                    </g>
+                                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                        <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                            stroke-miterlimit="10" stroke="rgb(190,168,128)" stroke-opacity="1"
+                                            stroke-width="3"
+                                            d=" M41.20399856567383,109.95099639892578 C41.20399856567383,109.95099639892578 41.20399856567383,62.395999908447266 41.20399856567383,62.395999908447266">
+                                        </path>
+                                    </g>
+                                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                        <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                            stroke-miterlimit="10" stroke="rgb(190,168,128)" stroke-opacity="1"
+                                            stroke-width="3"
+                                            d=" M54.5369987487793,62.61800003051758 C54.5369987487793,62.61800003051758 54.5369987487793,109.95099639892578 54.5369987487793,109.95099639892578">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g transform="matrix(1,0,0,0.9399500489234924,0,6.4197235107421875)" opacity="1"
+                                    style="display: block;">
+                                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                        <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                            stroke-miterlimit="10" stroke="rgb(190,168,128)" stroke-opacity="1"
+                                            stroke-width="3"
+                                            d=" M54.5369987487793,62.395999908447266 C54.5369987487793,62.395999908447266 54.5369987487793,44.84000015258789 54.5369987487793,44.84000015258789">
+                                        </path>
+                                    </g>
+                                    <g opacity="1" transform="matrix(1,0,0,1,47.5,53.50699996948242)">
+                                        <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                            stroke-miterlimit="10" stroke="rgb(190,168,128)" stroke-opacity="1"
+                                            stroke-width="3"
+                                            d=" M30.309999465942383,9.036999702453613 C30.309999465942383,9.036999702453613 -30.30900001525879,9.036999702453613 -30.30900001525879,9.036999702453613 C-33.534000396728516,9.036999702453613 -36.14799880981445,6.421999931335449 -36.14799880981445,3.197000026702881 C-36.14799880981445,3.197000026702881 -36.14799880981445,-3.197999954223633 -36.14799880981445,-3.197999954223633 C-36.14799880981445,-6.422999858856201 -33.534000396728516,-9.036999702453613 -30.30900001525879,-9.036999702453613 C-30.30900001525879,-9.036999702453613 30.309999465942383,-9.036999702453613 30.309999465942383,-9.036999702453613 C33.53499984741211,-9.036999702453613 36.14799880981445,-6.422999858856201 36.14799880981445,-3.197999954223633 C36.14799880981445,-3.197999954223633 36.14799880981445,3.197000026702881 36.14799880981445,3.197000026702881 C36.14799880981445,6.421999931335449 33.53499984741211,9.036999702453613 30.309999465942383,9.036999702453613z">
+                                        </path>
+                                    </g>
+                                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                        <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                            stroke-miterlimit="10" stroke="rgb(190,168,128)" stroke-opacity="1"
+                                            stroke-width="3"
+                                            d=" M41.20399856567383,62.395999908447266 C41.20399856567383,62.395999908447266 41.20399856567383,44.84000015258789 41.20399856567383,44.84000015258789">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g transform="matrix(1,0,0,0.9399500489234924,0,6.4197235107421875)" opacity="1"
+                                    style="display: block;">
+                                    <g opacity="1" transform="matrix(1,0,0,1,47.64699935913086,33.92300033569336)">
+                                        <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0"
+                                            stroke-miterlimit="10" stroke="rgb(190,168,128)" stroke-opacity="1"
+                                            stroke-width="3"
+                                            d=" M-0.6869999766349792,8.565999984741211 C-2.431999921798706,2.1489999294281006 -7.488999843597412,-10.281000137329102 -20.489999771118164,-10.281000137329102 C-25.785999298095703,-10.281000137329102 -29.073999404907227,-8.190999984741211 -29.073999404907227,-4.820000171661377 C-29.073999404907227,1.3029999732971191 -19.075000762939453,9.696999549865723 -0.25999999046325684,10.281000137329102 C-0.25999999046325684,10.281000137329102 0.25999999046325684,10.281000137329102 0.25999999046325684,10.281000137329102 C19.075000762939453,9.696999549865723 29.073999404907227,1.3029999732971191 29.073999404907227,-4.820000171661377 C29.073999404907227,-8.190999984741211 25.785999298095703,-10.281000137329102 20.489999771118164,-10.281000137329102 C7.63700008392334,-10.281000137329102 2.546999931335449,1.8669999837875366 0.746999979019165,8.343999862670898">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg></div>
+                </div>
+
+                <br>
+
+                    <a href="#" class="boton modal-regalos " id="botonModal">Número de CBU</a>
+
+            </div>
+        </div>
+    </section>
+ 
+    <!-- MODAL MIO -->
+    <section name="modal">
+        <div id="contenedorModal">
+            <div>
+                <label >Nombre : <span>Ariel</span></label> <br>
+                <label >Apellido : <span>Schinocca</span></label> <br>
+                <label >Alias : <span>alero.beige.alamo.mp</span></label> <br>
+                <label >CBU : <span>0000003100029606010873</span></label> <br>
+                <!-- <label >Mercado Pago</label>
+                <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+data-preference-id="129765325-7b7d970c-7b8e-43ab-8600-2fe4d6de651f" data-source="button"> -->
+</script>
+
+
+            </div>
+                
+
+            <a href="#" class="boton modal-regalos " id="botonCerrarModal">Cerrar</a>
+        </div>
+    </section>
+
+ 
+
+    <!-- Footer-->
+    <footer>
+
+    <section class="footer">
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-md-6 col-nombres-footer d-flex justify-content-center align-items-center">
+                    <div>
+                        <img src="./img/diego.jpg" alt="FOTO-CUMPLE"  style="width: 10em; border-radius: 1em;">
+                        <h4 style="padding-top: 3em;">Los Esperamos</h4>
+                        <h5>Ariel y Celeste</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-acciones-footer d-flex justify-content-center align-items-center">
+
+                    <ul>
+                        <li>
+                                <h3></h3>
+                        </li>
+
+                        <li>
+                            <div title="" class="addeventatc" id="addeventatc2" aria-haspopup="true"
+                                aria-expanded="false" tabindex="0" translate="no" data-loaded="true"
+                                style="visibility: visible;">
+
+                                <span class="start atc_node notranslate">2024-05-13 23:52:53</span>
+                                <span class="end atc_node notranslate">2024-09-07 23:52:53</span>
+                                <span class="timezone atc_node notranslate">America/Argentina/Buenos_Aires</span>
+                                <span class="title atc_node notranslate"></span>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+
+
+    <script>
+        var _pathApp = "https://www.fixdate.io/";
+
+        var _pathProducto = "https://www.fixdate.io/modelo-invitacion/36/";
+
+        var tokenProducto = "";
+
+        // Idioma
+        var langJs = "es";
+
+
+        // Idioma js en MODELO e INVITACION
+        var langJsVariante = "es-AR";
+
+        // Cuenta regresiva
+        // var fechaCuentaRegresiva = "05/25/2024 21:00:00";
+
+    </script>
+    
+    <!-- Idioma por defecto js -->
+    <script>
+        var langDefault = 'es-AR';
+    </script>
+
+
+    <!-- Lottie -->
+    <script src="https://www.fixdate.io/modelo-invitacion/36/js/lottie_svg.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+
+
+
+    <!-- Listado de js con version dinamica segun modificacion de archivo -->
+    <script type="text/javascript"
+        src="https://www.fixdate.io/modelo-invitacion/36/langs/js/es-AR.js?v=1670865915"></script>
+    <script type="text/javascript"
+        src="https://www.fixdate.io/modelo-invitacion/36/js/jquery-3.5.1.min.js?v=1670862562"></script>
+    <script type="text/javascript"
+        src="https://www.fixdate.io/modelo-invitacion/36/../../public/js/jquery.cookie.js?v=1645580925"></script>
+    <script type="text/javascript"
+        src="https://www.fixdate.io/modelo-invitacion/36/../../public/js/change-lang.js?v=1645580924"></script>
+    <script type="text/javascript"
+        src="https://www.fixdate.io/modelo-invitacion/36/js/waypoint/noframework.waypoints.min.js?v=1670865910"></script>
+    <script type="text/javascript"
+        src="https://www.fixdate.io/modelo-invitacion/36/js/parallax.min.js?v=1670862564"></script>
+    <script type="text/javascript"
+        src="https://www.fixdate.io/modelo-invitacion/36/js/popper.min.js?v=1670862564"></script>
+    <script type="text/javascript"
+        src="https://www.fixdate.io/modelo-invitacion/36/js/bootstrap.min.js?v=1670862562"></script>
+    <script type="text/javascript"
+        src="https://www.fixdate.io/modelo-invitacion/36/js/slick.min.js?v=1670862566"></script>
+    <script type="text/javascript"
+        src="https://www.fixdate.io/modelo-invitacion/36/js/jquery.fancybox.min.js?v=1670862563"></script>
+    <script type="text/javascript"
+        src="https://www.fixdate.io/modelo-invitacion/36/js/scripts.js?v=1670862564"></script>
+
+
+
+    </script>
+
+
+    <!-- Modal Confirmar asistencia -->
+
+
+    <!-- Cuenta regresiva -->
+    <script>
+        // Set the date we're counting down to
+        // var fechaCuentaRegresiva = "04/29/2024";
+        var countDownDate = new Date("09/07/2024").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            // document.getElementById("reloj").innerHTML = days + " días " + hours + "hs " +
+            minutes + "m " + seconds + "s ";
+
+            $("#dias .number").text(days);
+            $("#horas .number").text(hours);
+            $("#minutos .number").text(minutes);
+            $("#segundos .number").text(seconds);
+
+
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("reloj").innerHTML = '<p class="fin-cuenta">' +
+                    lang_textoFinalCuentaRegresiva + '</p>';
+                $('.falta').text('');
+            }
+        }, 1000);
+    </script>
+    <!-- Modal sugerir cancion -->
+    <script>
+        // Abrir modal
+        $('body').on('click', 'a.sugerir-cancion', function (e) {
+
+            e.preventDefault();
+
+            // Remuevo mensajes de error anteriores
+            $("#error-form").remove();
+
+            $('#modalSugerirCancion').modal({
+                backdrop: 'static'
+            })
+
+        });
+
+        // Validacion de form.
+        function isOkSugerirCancion() {
+
+
+            // Remuevo mensajes de error anteriores
+            $("#error-form").remove();
+
+            // Variables necesarias para la validacion
+            var flag = true;
+            var err = '';
+
+
+            // Variables del form para validar.
+            var sugerenciaName = $.trim($("#nombreSugerencia").val());
+            var sugerenciaDescription = $.trim($("#descripcionSugerencia").val());
+            var sugerenciaLink = $.trim($("#linkSugerencia").val());
+
+
+
+            // Descripcion
+            if (sugerenciaDescription == '') {
+                flag = false;
+                err = lang_cancionRequerida;
+            } else {
+                if (sugerenciaDescription.length > 50) {
+                    flag = false;
+                    err = lang_caracteresCancionSugerencia;
+                }
+            }
+
+            // Link
+            if (sugerenciaLink != '') {
+
+                if (!is_url(sugerenciaLink)) {
+                    flag = false;
+                    err = lang_linkIncorrecto;
+                }
+                if (sugerenciaLink.length > 250) {
+                    flag = false;
+                    err = lang_caracteresLinkSugerencia;
+                }
+
+            }
+
+            // Nombre
+            if (sugerenciaName == '') {
+                flag = false;
+                err = lang_nombreRequerido;
+            } else {
+                if (sugerenciaName.length > 20) {
+                    flag = false;
+                    err = lang_caracteresNombreSugerencia;
+                }
+            }
+
+
+            // Si hay error
+            if (flag === false) {
+
+                // Imprimo el error
+                $('#formSugerirCancion').after('<span id="error-form">' + err + '</span>');
+
+            }
+
+            // Retorno el estado de la validacion
+            return flag;
+
+        }
+
+
+
+        // Enviar sugerencia
+        $('body').on('click', '#sendSugerenciaCancion', function (e) {
+
+            e.preventDefault();
+
+
+            if (isOkSugerirCancion()) //Form bien validado
+            {
+
+                // Load and disabled buttom.
+                $("#sendSugerenciaCancion").text(lang_enviandoSugerencia + "...");
+                $("#sendSugerenciaCancion").prop("disabled", true);
+
+                // Obtengo el Form.
+                var formulario = $("#formSugerirCancion")[0];
+
+                // Obtengo los datos del formulario
+                var datos = new FormData(formulario);
+
+
+                // Visualizar como viajan los datos
+                for (var pair of datos.entries()) {
+                    console.log(pair[0] + ", " + pair[1]);
+                }
+
+
+                // Envio con fetch los datos mediante POST
+                fetch(_pathApp + "producto/fetchs/sugerir-cancion.php", {
+                    method: "POST",
+                    body: datos
+                })
+                    // Promesas fetch
+                    .then(res => res.json())
+                    .then(data => {
+
+                        // Si recibo error 
+                        if (data.error === true) {
+
+                            $("#sendSugerenciaCancion").text(lang_sugerirCancion);
+                            $("#sendSugerenciaCancion").prop("disabled", false);
+
+                            // Imprimo el error
+                            $('#formSugerirCancion').after('<span id="error-form">' + data.desc + '</span>');
+                        }
+
+                        // Si no hay error 
+                        if (data.error === false) {
+
+                            $("#sendSugerenciaCancion").text(lang_sugerirCancion);
+                            $("#sendSugerenciaCancion").prop("disabled", false);
+
+
+                            // Oculto elementos del form y reseteo
+                            $('#formSugerirCancion')[0].reset();
+                            $('#modalSugerirCancion .formulario-content, #modalSugerirCancion .modal-footer, #modalSugerirCancion h5').hide();
+
+
+                            // Acomodo el css para centrar mensaje
+                            $('#modalSugerirCancion .modal-body').addClass('fix-height');
+
+
+                            // Muestro mensaje de exito
+
+                            $('#modalSugerirCancion .msj-content').html(
+                                "<h5>" + lang_sugerirCancionMsjExito_1 + "</h5><p>" + lang_sugerirCancionMsjExito_2 + "</p>"
+                            ).show();
+
+
+                            // Cierro modal y vuelvo a activar form
+                            setTimeout(function () {
+
+                                $('#modalSugerirCancion').modal('hide');
+                                $('#modalSugerirCancion .formulario-content, #modalSugerirCancion .modal-footer, #modalSugerirCancion h5').show();
+                                $('#modalSugerirCancion .msj-content').html('').hide();
+                                $('#modalSugerirCancion .modal-body').removeClass('fix-height');
+
+                            }, 4000);
+                        }
+                    });
+            }
+        });
+    </script>
+    
+    <!-- Modal Vestuario -->
+    <script>
+        // Abrir modal
+        $('body').on('click', 'a.modal-vestuario', function (e) {
+
+            e.preventDefault();
+
+            $('#modalVestuario').modal({
+                backdrop: 'static'
+            })
+
+        });
+    </script>
+    <!-- Modal Tips -->
+    <script>
+        // Abrir modal
+        $('body').on('click', 'a.modal-tips', function (e) {
+
+            e.preventDefault();
+
+            $('#modalTips').modal({
+                backdrop: 'static'
+            })
+
+        });
+    </script>
+
+    <!-- Modal regalos -->
+    <script>
+        // Abrir modal
+        $('body').on('click', 'a.modal-regalos', function (e) {
+
+            e.preventDefault();
+
+            $('#modalRegalos').modal({
+                backdrop: 'static'
+            })
+
+        });
+    </script>
+
+    <!-- Instagram parallax -->
+    <script>
+        // Si el ancho es de Telefono
+        if ($(window).width() < 768) {
+
+            // Aceptar webp?
+            if (support_format_webp()) {
+                var imageInstagramParallax = 'img/instagram_mobile.webp';
+            } else {
+                var imageInstagramParallax = 'img/instagram_mobile.jpg';
+            }
+
+        } else {
+
+            // Aceptar webp?
+            if (support_format_webp()) {
+                var imageInstagramParallax = 'img/instagram.webp';
+            } else {
+                var imageInstagramParallax = 'img/instagram.jpg';
+            }
+
+        }
+
+        $('.instagram').parallax({
+            imageSrc: _pathProducto + imageInstagramParallax
+        });
+    </script>
+
+   
+    <!-- Idiomas segun config de invitacion -->
+    <!-- Portada parallax -->
+
+    </script>
+
+<!-- MIOS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script src="./Glider.js-master/glider.js"></script>
+<script src="./index.js"></script>
+
+</body>
+
+</html>
