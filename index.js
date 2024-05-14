@@ -2,50 +2,6 @@
 
 
 
-// --------------------------------------------------------------------------
-//                          FUNCIONES
-//--------------------------------------------------------------------------
-//----- AUDIO 
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('La página se ha cargado completamente.');
-    var audio = document.getElementById('miAudio');
-    audio.play();
-});
-
-
-function botonColor(){
-    const boton = document.getElementById("play-pause-music");
-    boton.addEventListener("click", () => {
-
-    if( boton.style.backgroundColor == "green"){
-        boton.style.backgroundColor = "red" 
-
-    }else{
-        boton.style.backgroundColor = "green" 
-    }
-    // Genera colores aleatorios (puedes personalizar esto)
-    // const aleatorio1 = Math.floor(Math.random() * 256);
-    // const aleatorio2 = Math.floor(Math.random() * 256);
-    // const aleatorio3 = Math.floor(Math.random() * 256);
-
-    // Cambia el color de fondo del botón
-    // boton.style.backgroundColor = `rgb(${aleatorio1}, ${aleatorio2}, ${aleatorio3})`;
-    });
-}
-botonColor();
-//---------------------------------------------------------------------------
-//                           INICIO HTML
-//---------------------------------------------------------------------------
-window.onload("load", () => {
-
-    audioPlay();
-    audio.classList.add("play");
-    audio.src = "./audio/elvis.mp3";
-});
-
-//-----------------------------------------------------------------------------
-//                      BOTONES AUDIO
-// ----------------------------------------------------------------------------
 
 //-----------------------------------------------------------------------------
 //                      CARROUSEL
