@@ -3,7 +3,6 @@
 
 
 
-
 window.addEventListener("load", () => {
     const glider = new Glider(document.querySelector('.list_carrousel'), {
         slidesToScroll: 1,

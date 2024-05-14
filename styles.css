@@ -16,7 +16,7 @@ h1{
 }
 
 .content-portada{
-    background-color: rgb(243, 229, 231);
+    background-color: #97c9b8;
 }
 
 #audioPlayer {
@@ -103,7 +103,7 @@ header{
 
 
         img{
-            border: groove rgba(248, 174, 199, 0.589) 1em;
+            border: groove rgba(5, 207, 22, 0.192) 1em;
             border-radius: 1em;
             /* width: 100%; */
         }
