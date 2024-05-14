@@ -19,6 +19,10 @@ h1{
     background-color: rgb(243, 229, 231);
 }
 
+#audioPlayer {
+    display: none; /* Para ocultar el reproductor de audio */
+  }
+
 @media screen and (max-width: 640px) and (max-width: 1280px) {
 
 }
@@ -99,7 +103,7 @@ header{
 
 
         img{
-            border: groove rgba(255, 217, 0, 0.589) 1em;
+            border: groove rgba(248, 174, 199, 0.589) 1em;
             border-radius: 1em;
             /* width: 100%; */
         }

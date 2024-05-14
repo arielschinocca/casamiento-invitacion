@@ -1,6 +1,9 @@
 
 
 
+
+
+
 window.addEventListener("load", () => {
     const glider = new Glider(document.querySelector('.list_carrousel'), {
         slidesToScroll: 1,
@@ -42,3 +45,27 @@ window.addEventListener('load', function() {
     audio.play();
   });
   
+
+  // MODAL
+let botonModal = document.getElementById("botonModal");
+let modal = document.getElementById("contenedorModal");
+
+botonModal.addEventListener( "click", ()=>{
+
+
+    if( modal.style.display == "none"){
+        modal.style.display = "block";
+        return;
+    }
+
+    modal.style.display ="none";
+})
+
+let botonCerrarModal = document.getElementById("botonCerrarModal");
+let cerrarModal = document.getElementById("contenedorModal");
+
+botonCerrarModal.addEventListener( "click", ()=>{
+
+    cerrarModal.style.display ="none";
+})
+

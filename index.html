@@ -565,9 +565,7 @@
 <body >
 
         <!--Musica automatica-->
-        <audio id="miAudio" autoplay>
-            <source src="./audio/elvis.mp3" type="audio/mp3">
-          </audio>
+        <audio id="audioPlayer" src="./audio/elvis.mp3" autoplay></audio>
           
           
 
@@ -1334,7 +1332,19 @@ data-preference-id="129765325-7b7d970c-7b8e-43ab-8600-2fe4d6de651f" data-source=
     </script>
 
 
-    <!-- Modal Confirmar asistencia -->
+   <!-- Modal regalos -->
+   <script>
+    // Abrir modal
+    $('body').on('click', 'a.modal-regalos', function (e) {
+
+        e.preventDefault();
+
+        $('#modalRegalos').modal({
+            backdrop: 'static'
+        })
+
+    });
+</script>
 
 
     <!-- Cuenta regresiva -->
