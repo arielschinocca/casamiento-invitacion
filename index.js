@@ -39,11 +39,25 @@ window.addEventListener("load", () => {
 //---------------------------------------------------------------------------
 
 
-window.addEventListener('load', function() {
-    var audio = document.getElementById('miAudio');
-    audio.play();
-  });
-  
+document.addEventListener("DOMContentLoaded", function() {
+    var audio = document.getElementById('myAudio');
+    var playButton = document.getElementById('playButton');
+
+    audio.play().catch(function(error) {
+        console.log("Reproducción automática de audio bloqueada por el navegador.");
+        console.log(error);
+        playButton.style.display = 'block';
+    });
+
+    playButton.addEventListener('click', function() {
+        audio.play().catch(function(error) {
+            console.log("Error al reproducir el audio.");
+            console.log(error);
+        });
+        playButton.style.display = 'none';
+    });
+});
+
 
   // MODAL
 let botonModal = document.getElementById("botonModal");
