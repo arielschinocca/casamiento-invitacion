@@ -132,6 +132,12 @@ header{
     } 
 }
 
+#botonModal{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: x-large;
+}
+
 #contenedorModal{
     display: none;
     background-color: rgb(240, 240, 240);
